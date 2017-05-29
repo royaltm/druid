@@ -433,6 +433,7 @@ public class JobHelper
         break;
       case "s3":
       case "s3n":
+      case "s3a":
         loadSpec = ImmutableMap.<String, Object>of(
             "type", "s3_zip",
             "bucket", indexOutURI.getHost(),
